@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servers | REALENVY</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .servers-page .page-title {
+      padding: 48px 0;
+      background: linear-gradient(135deg, #300606, #080808 80%);
+      border-bottom: 3px solid #ff9d00;
+    }
+
+    .servers-page .page-title h1 {
+      color: #fff;
+      text-shadow: 4px 4px 0 #e52222;
+      margin-bottom: 12px;
+    }
+
+    .servers-page .page-title p {
+      max-width: 650px;
+    }
+
+    .servers-page .server-grid {
+      align-items: stretch;
+    }
+
+    .servers-page .card.server {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .servers-page .card.server .photo {
+      position: relative;
+      height: 250px;
+      flex-shrink: 0;
+      background: #300606;
+    }
+
+    .servers-page .card.server .photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.35s ease;
+    }
+
+    .servers-page .card.server:hover .photo img {
+      transform: scale(1.04);
+    }
+
+    .servers-page .card.server .body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .servers-page .card.server .body > p {
+      margin-bottom: 8px;
+    }
+
+    .servers-page .card.server h2 {
+      color: #fff;
+    }
+
+    .servers-page .address {
+      margin-top: auto;
+      padding-top: 14px;
+      border: 0;
+    }
+
+    .servers-page .address div {
+      background: #151010;
+      margin-bottom: 8px;
+      border: 1px solid #493030;
+      align-items: center;
+    }
+
+    .servers-page .address div:last-child {
+      border-bottom: 1px solid #493030;
+    }
+
+    .servers-page .address code {
+      text-align: right;
+    }
+
+    .servers-page .join-section {
+      background: #0c0c0c;
+      border-top: 1px solid #321010;
+    }
+
+    .servers-page .section-head h2 {
+      color: #ff9d00;
+    }
+
+    .servers-page .steps li {
+      min-width: 0;
+    }
+
+    .servers-page .steps li > div {
+      min-width: 0;
+    }
+
+    .servers-page .steps p {
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 800px) {
+      .servers-page .page-title {
+        padding: 38px 0;
+      }
+
+      .servers-page .card.server .photo {
+        height: 260px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .servers-page .page-title {
+        padding: 30px 0;
+      }
+
+      .servers-page .card.server .photo {
+        height: 210px;
+      }
+
+      .servers-page .card.server .body {
+        padding: 18px;
+      }
+
+      .servers-page .address div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 10px;
+      }
+
+      .servers-page .address code {
+        text-align: left;
+        max-width: 100%;
+      }
+
+      .servers-page .steps li {
+        gap: 12px;
+        padding: 14px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body class="servers-page">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="home.html">
+      <span></span>REALENVY
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="home.html" class="sh">Home</a></li>
+        <li><a href="servers.html" class="ss active" aria-current="page">Servers</a></li>
+        <li><a href="gallery.html" class="sg">Gallery</a></li>
+        <li><a href="team.html" class="st">Team</a></li>
+        <li><a href="login.html" class="logout">Log out</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-title">
+    <div class="wrap">
+      <h1>Our servers</h1>
+      <p>REALENVY plays on two servers. Choose your server and use the address for your Minecraft edition.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="grid-2 server-grid">
+
+        <div class="card server">
+          <div class="photo">
+            <img src="DodgeSMP.png" alt="Dodge SMP Minecraft server">
+          </div>
+
+          <div class="body">
+            <span class="tag">Economy</span>
+            <h2>Dodge SMP</h2>
+
+            <p>
+              An economy server where you earn, trade, build,
+              and play together with the REALENVY clan.
+            </p>
+
+            <div class="address">
+              <div>
+                <span>Java address</span>
+                <code>play.dodgesmp.net</code>
+              </div>
+
+              <div>
+                <span>Bedrock address</span>
+                <code>play.dodgesmp.net</code>
+              </div>
+
+              <div>
+                <span>Bedrock port</span>
+                <code>19132</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card server">
+          <div class="photo">
+            <img src="ProjectSMP.png" alt="ProjectSMP Minecraft server">
+          </div>
+
+          <div class="body">
+            <span class="tag">Community</span>
+            <h2>ProjectSMP</h2>
+
+            <p>
+              Our second home server. Join REALENVY,
+              explore the world, and play with the clan on Java or Bedrock.
+            </p>
+
+            <div class="address">
+              <div>
+                <span>Java address</span>
+                <code>projectsmp.org</code>
+              </div>
+
+              <div>
+                <span>Bedrock address</span>
+                <code>projectsmp.org</code>
+              </div>
+
+              <div>
+                <span>Bedrock port</span>
+                <code>19132</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="join-section">
+    <div class="wrap">
+
+      <div class="section-head">
+        <h2>How to join</h2>
+        <p>Follow these simple steps to join REALENVY in Minecraft.</p>
+      </div>
+
+      <ol class="steps">
+        <li>
+          <div>
+            <h3>Open Minecraft</h3>
+            <p>Launch Minecraft Java Edition or Bedrock Edition.</p>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <h3>Add a server</h3>
+            <p>Go to Multiplayer on Java or Servers on Bedrock, then choose Add Server.</p>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <h3>Enter the address</h3>
+            <p>Copy the address of your chosen server. Bedrock players should also enter port 19132.</p>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <h3>Join and say hi</h3>
+            <p>Connect to the server and tell everyone you're from REALENVY!</p>
+          </div>
+        </li>
+      </ol>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>
+      <b>REALENVY</b> &copy; 2026 &mdash;
+      70 teammates, 470 Discord members, 2 servers.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

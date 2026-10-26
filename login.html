@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | REALENVY</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="login-page">
+
+    <div class="login-side">
+      <h1>REALENVY</h1>
+
+      <p>
+        Our clan home on Minecraft. Log in to explore
+        our servers, gallery, and team.
+      </p>
+
+      <div class="photo login-clan-photo">
+        <img
+          src="Realenvy%20clan%20image.png"
+          alt="REALENVY Minecraft clan"
+        >
+      </div>
+
+      <p class="login-tagline">
+        BUILD TOGETHER. FIGHT TOGETHER. STAY REAL.
+      </p>
+    </div>
+
+    <div class="login-form-area">
+      <form class="login-box" action="home.html" method="get">
+
+        <h2>Log in</h2>
+        <p class="login-welcome">Welcome back, teammate.</p>
+
+        <label for="user">Username</label>
+        <input
+          type="text"
+          id="user"
+          name="user"
+          placeholder="Your Minecraft name"
+          autocomplete="username"
+          required
+        >
+
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          placeholder="Your password"
+          autocomplete="current-password"
+          required
+        >
+
+        <button class="btn" type="submit">Log in</button>
+
+        <p class="note">
+          No account yet?
+          <a href="home.html">Continue as guest</a>
+        </p>
+
+      </form>
+    </div>
+
+  </main>
+</body>
+</html>
